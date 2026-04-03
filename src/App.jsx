@@ -1,284 +1,347 @@
-const servicePills = [
-  'Website Design',
-  'Landing Pages',
-  'Video Editing',
-  'Paid Advertising',
-  'Social Media Management',
-];
+const audiences = ['Engineering Students', 'Tech Professionals', 'Campus Innovators', 'Project Builders'];
 
-const services = [
+const highlights = [
   {
-    title: 'Website Design',
-    description:
-      'Clean, premium websites for real estate brokers and agencies that build trust fast and make every listing, service, and testimonial easier to sell.',
+    value: '01',
+    title: 'Training Programs',
+    description: 'Regular live learning experiences that connect academic concepts to emerging tools, platforms, and real industry workflows.',
   },
   {
-    title: 'Landing Page Design',
-    description:
-      'Conversion-focused landing pages for lead generation, project launches, valuation campaigns, and ad traffic that needs one clear action.',
+    value: '02',
+    title: 'Innovation Contests',
+    description: 'Challenge-driven experiences that push members to experiment, solve problems, and stay motivated through creation.',
   },
   {
-    title: 'Video Editing',
-    description:
-      'Listing reels, talking-head edits, promo cuts, and branded property videos that help listings feel more aspirational and polished.',
-  },
-  {
-    title: 'Paid Advertising',
-    description:
-      'Meta and Google ad campaigns connected to pages, offers, and reporting so your brokerage or agency can scale enquiries with clarity.',
-  },
-  {
-    title: 'Social Media Management',
-    description:
-      'Content planning, caption systems, reel publishing, and brand consistency for real estate businesses that want to stay visible without chaos.',
+    value: '03',
+    title: 'Awards & Recognition',
+    description: 'A visible way to celebrate progress, reward ambition, and spotlight people who keep building beyond the classroom.',
   },
 ];
 
-const results = [
-  { value: '5', label: 'core services under one real estate-focused partner' },
-  { value: '14d', label: 'average launch window for a focused landing page' },
-  { value: '92%', label: 'of clients continue into repeat work or monthly retainers' },
-];
-
-const clientTypes = [
+const pillars = [
   {
-    label: 'Independent Brokers',
-    title: 'Personal-brand websites, lead funnels, and content systems that help solo brokers look established.',
-    stat: 'Positioning, landing pages, listing reels',
+    tag: 'Learn',
+    title: 'Industry-relevant upskilling that feels practical from day one',
+    description:
+      'Techvruk packages fast-moving technology topics into structured programs so learners can keep pace with what modern engineering teams are actually using.',
+    chips: ['Hands-on sessions', 'Emerging tech', 'Guided cohorts'],
   },
   {
-    label: 'Real Estate Agencies',
-    title: 'Agency sites and campaign pages designed to support multiple agents, service lines, and enquiry types.',
-    stat: 'Web design, ads, team-first messaging',
+    tag: 'Compete',
+    title: 'Innovation contests that turn passive learning into action',
+    description:
+      'Members get chances to test ideas, collaborate under pressure, and build confidence through themed challenges and innovation sprints.',
+    chips: ['Challenge sprints', 'Problem solving', 'Peer energy'],
   },
   {
-    label: 'Project & Developer Campaigns',
-    title: 'Launch-ready pages and creative built for project marketing, pre-launch registrations, and buyer interest.',
-    stat: 'Campaign pages, paid ads, asset production',
-  },
-];
-
-const testimonials = [
-  {
-    quote:
-      'They gave our brokerage a sharper brand, faster pages, and ad creatives our team was finally proud to send traffic to.',
-    name: 'Aarav Mehta',
-    role: 'Managing Director, Northline Realty',
+    tag: 'Recognize',
+    title: 'Awards that keep momentum high and effort visible',
+    description:
+      'Recognition creates motivation. It gives members a reason to stay engaged, showcase their work, and aim for higher-impact outcomes.',
+    chips: ['Spotlights', 'Achievement culture', 'Visible growth'],
   },
   {
-    quote:
-      'The landing page felt like a premium sales experience, not another template. Lead quality improved within the first week.',
-    name: 'Sophia Clarke',
-    role: 'Growth Lead, Montero Estates',
+    tag: 'Connect',
+    title: 'A network of like-minded builders ready to collaborate',
+    description:
+      'The platform brings together students, professionals, mentors, and ambitious teams who want to learn together and work on future-ready projects.',
+    chips: ['Community circles', 'Collaboration', 'Project teams'],
   },
 ];
 
-const steps = [
-  'We align on your audience, service mix, and the exact type of enquiry you want to generate.',
-  'We design the page, shape the messaging, and build the creative assets around your market position.',
-  'We launch with a clean handoff or continue as your ongoing partner for ads, content, and updates.',
+const journey = [
+  {
+    step: 'Discover',
+    title: 'Understand what to learn next',
+    description: 'First-time visitors quickly see how Techvruk connects current studies with the technologies shaping the future of engineering.',
+  },
+  {
+    step: 'Upskill',
+    title: 'Join guided training experiences',
+    description: 'Programs create a structured path for growing beyond theory and building confidence with modern tools and systems.',
+  },
+  {
+    step: 'Build',
+    title: 'Apply knowledge in contests and projects',
+    description: 'Challenges encourage experimentation, teamwork, and practical problem solving instead of passive consumption.',
+  },
+  {
+    step: 'Belong',
+    title: 'Grow inside a motivated network',
+    description: 'Recognition, peer connections, and collaboration opportunities keep members engaged long after the first program ends.',
+  },
 ];
+
+const communityGroups = [
+  {
+    label: 'Students',
+    title: 'Break out of syllabus-only learning with exposure to fast-moving technologies, guided practice, and innovation culture.',
+  },
+  {
+    label: 'Professionals',
+    title: 'Stay relevant, sharpen new skills, and connect with communities exploring what modern engineering roles demand next.',
+  },
+  {
+    label: 'Clubs & Institutions',
+    title: 'Create more meaningful engagement through training, contests, and recognition formats that energize technical communities.',
+  },
+];
+
+const focusAreas = [
+  {
+    title: 'AI & Intelligent Systems',
+    description: 'Applied AI, machine learning workflows, automation thinking, and future-facing problem solving.',
+  },
+  {
+    title: 'Cloud, Web & Product Engineering',
+    description: 'Modern application building, deployment, developer workflows, and collaborative product execution.',
+  },
+  {
+    title: 'Robotics, Embedded & Smart Hardware',
+    description: 'Hands-on exploration of systems that connect code, electronics, automation, and real-world engineering use cases.',
+  },
+  {
+    title: 'Innovation Leadership',
+    description: 'Design thinking, team collaboration, presentation skills, and the mindset required to take ideas further.',
+  },
+];
+
+const launchpadChips = ['Live cohorts', 'Future-ready projects', 'Peer networking', 'Award moments', 'Mentor energy', 'Innovation culture'];
+const momentumLoop = ['Learn emerging tools', 'Practice with guidance', 'Compete with purpose', 'Collaborate on what comes next'];
 
 function App() {
   return (
     <div className="page-shell">
-      <div className="ambient ambient-one" />
-      <div className="ambient ambient-two" />
-
       <header className="topbar">
-        <div className="brand">
-          <span className="brand-mark">EE</span>
+        <a className="brand" href="#top">
+          <span className="brand-mark">TV</span>
           <div>
-            <p>Elevate Estates</p>
-            <span>Websites, Ads & Content for Real Estate</span>
+            <p>Techvruk</p>
+            <span>Future-ready learning for engineers and technologists</span>
           </div>
-        </div>
+        </a>
 
         <nav className="nav">
-          <a href="#services">Services</a>
-          <a href="#clients">Clients</a>
-          <a href="#process">Process</a>
-          <a href="#contact">Contact</a>
+          <a href="#platform">Platform</a>
+          <a href="#journey">Journey</a>
+          <a href="#community">Community</a>
+          <a href="#contact">Join</a>
         </nav>
       </header>
 
       <main>
-        <section className="hero">
+        <section className="hero" id="top">
           <div className="hero-copy">
-            <span className="eyebrow">Creative and growth services for brokers, agencies, and developers</span>
-            <h1>One real estate agency partner for websites, landing pages, ads, video, and social media.</h1>
+            <span className="eyebrow">Training programs, innovation contests, awards, and networking</span>
+            <h1>Where engineering talent grows into future-ready innovators.</h1>
             <p className="hero-text">
-              We help real estate businesses present themselves better online and turn more traffic into enquiries. Whether you need a new website,
-              a campaign landing page, listing video edits, paid ads, or full social media support, everything is designed to feel premium and sell clearly.
+              Techvruk is built for engineering and technology students, professionals, and communities who want more than passive learning. It bridges
+              academic foundations with emerging industry technologies through regular training, collaborative challenges, recognition, and a strong
+              innovation network.
             </p>
 
-            <div className="service-pills">
-              {servicePills.map((pill) => (
-                <span key={pill} className="service-pill">
-                  {pill}
+            <div className="audience-pills">
+              {audiences.map((audience) => (
+                <span key={audience} className="audience-pill">
+                  {audience}
                 </span>
               ))}
             </div>
 
             <div className="hero-actions">
-              <a className="primary-button" href="#contact">
-                Book a discovery call
+              <a className="primary-button" href="#platform">
+                Explore the platform
               </a>
-              <a className="secondary-button" href="#work">
-                See recent outcomes
+              <a className="secondary-button" href="#tracks">
+                View focus areas
               </a>
             </div>
 
-            <div className="results-row">
-              {results.map((result) => (
-                <article key={result.label} className="result-card">
-                  <strong>{result.value}</strong>
-                  <span>{result.label}</span>
+            <div className="hero-highlights">
+              {highlights.map((item) => (
+                <article key={item.title} className="highlight-card">
+                  <span>{item.value}</span>
+                  <strong>{item.title}</strong>
+                  <p>{item.description}</p>
                 </article>
               ))}
             </div>
           </div>
 
-          <div className="hero-panel">
-            <div className="hero-panel-inner">
-              <div className="panel-heading">
-                <span>Featured Launch Stack</span>
-                <strong>Broker Growth Sprint</strong>
+          <div className="hero-board">
+            <div className="hero-board-inner">
+              <div className="board-header">
+                <span className="eyebrow board-eyebrow">Techvruk Launchpad</span>
+                <h2>A platform designed to create momentum, not just attendance.</h2>
               </div>
 
-              <div className="metric-grid">
-                <article>
-                  <span>Offer</span>
-                  <strong>Luxury listing lead funnel</strong>
-                </article>
-                <article>
-                  <span>Creative</span>
-                  <strong>Reels, paid ads, landing page</strong>
-                </article>
-                <article>
-                  <span>Goal</span>
-                  <strong>Booked consults and valuation requests</strong>
-                </article>
-                <article>
-                  <span>Launch</span>
-                  <strong>14 business days</strong>
-                </article>
-              </div>
+              <article className="board-card board-card-primary">
+                <span className="card-label">Inside the experience</span>
+                <div className="chip-grid">
+                  {launchpadChips.map((chip) => (
+                    <span key={chip} className="board-chip">
+                      {chip}
+                    </span>
+                  ))}
+                </div>
+              </article>
 
-              <div className="panel-story">
-                <div className="story-card story-card-dark">
-                  <span>Positioning</span>
-                  <p>Editorial-style design that helps premium inventory feel exclusive before the first call.</p>
+              <article className="board-card">
+                <span className="card-label">Momentum loop</span>
+                <div className="flow-list">
+                  {momentumLoop.map((item, index) => (
+                    <div key={item} className="flow-item">
+                      <strong>{index + 1}</strong>
+                      <span>{item}</span>
+                    </div>
+                  ))}
                 </div>
-                <div className="story-card story-card-light">
-                  <span>Performance</span>
-                  <p>Sharper messaging, faster load times, and clearer calls to action that reduce wasted ad spend.</p>
-                </div>
+              </article>
+
+              <div className="board-foot">
+                <article className="signal-card signal-card-accent">
+                  <span className="card-label">Why it matters</span>
+                  <p>It gives learners a clearer path from curiosity to capability to collaboration.</p>
+                </article>
+                <article className="signal-card">
+                  <span className="card-label">Who it serves</span>
+                  <p>Students, professionals, institutions, clubs, and teams who want innovation to feel active and achievable.</p>
+                </article>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="trust-band">
+        <section className="signal-strip">
           <p>
-            Designed for real estate brokers, multi-agent agencies, project marketers, and property businesses that need one team to handle design,
-            creative, and lead generation together.
+            Techvruk brings learning, recognition, and collaboration into one experience so first-time visitors immediately understand the platform's
+            purpose and energy.
           </p>
         </section>
 
-        <section className="section" id="services">
+        <section className="section" id="platform">
           <div className="section-heading">
-            <span className="eyebrow">Core Services</span>
-            <h2>A service stack built around how real estate brands actually win business online.</h2>
+            <span className="eyebrow">Why Techvruk</span>
+            <h2>A complete innovation ecosystem, not another one-off training page.</h2>
             <p>
-              Instead of managing separate freelancers for design, ads, editing, and content, your team gets one streamlined partner that understands
-              real estate sales cycles and brand presentation.
+              The platform is positioned to feel active, aspirational, and community-driven. Every section reinforces that Techvruk helps members
+              upskill, stay motivated, earn visibility, and collaborate on future-ready ideas.
             </p>
           </div>
 
-          <div className="services-grid">
-            {services.map((service, index) => (
-              <article key={service.title} className="service-card">
-                <span className="service-index">0{index + 1}</span>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
+          <div className="pillars-grid">
+            {pillars.map((pillar) => (
+              <article key={pillar.title} className="pillar-card">
+                <span className="pillar-tag">{pillar.tag}</span>
+                <h3>{pillar.title}</h3>
+                <p>{pillar.description}</p>
+                <div className="pillar-chip-row">
+                  {pillar.chips.map((chip) => (
+                    <span key={chip} className="pillar-chip">
+                      {chip}
+                    </span>
+                  ))}
+                </div>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="section split-section" id="clients">
+        <section className="section" id="journey">
           <div className="section-heading compact">
-            <span className="eyebrow">Who We Help</span>
-            <h2>Support shaped around the different ways brokers, agencies, and projects grow.</h2>
-            <p>Every engagement is tailored to the way your team acquires leads, presents listings, and follows up with prospects.</p>
+            <span className="eyebrow">Member Journey</span>
+            <h2>The experience is designed as a growth loop that keeps people learning and building.</h2>
           </div>
 
-          <div className="portfolio-grid">
-            {clientTypes.map((item) => (
-              <article key={item.title} className="portfolio-card">
-                <span>{item.label}</span>
-                <h3>{item.title}</h3>
-                <p>{item.stat}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="section process-section" id="process">
-          <div className="section-heading compact">
-            <span className="eyebrow">Our Process</span>
-            <h2>Clear, fast, and built for busy real estate teams that need execution without hand-holding.</h2>
-          </div>
-
-          <div className="process-layout">
-            <div className="process-list">
-              {steps.map((step, index) => (
-                <article key={step} className="step-card">
-                  <strong>{index + 1}</strong>
-                  <p>{step}</p>
+          <div className="journey-shell">
+            <div className="journey-grid">
+              {journey.map((item, index) => (
+                <article key={item.title} className="journey-card">
+                  <span className="journey-index">0{index + 1}</span>
+                  <strong>{item.step}</strong>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
                 </article>
               ))}
             </div>
 
-            <aside className="process-note">
-              <span>Why agencies like it</span>
+            <aside className="journey-note">
+              <span className="card-label">The gap Techvruk solves</span>
               <p>
-                You do not need to coordinate a designer, a video editor, an ad buyer, and a social media manager separately. The workflow is built so
-                one partner can carry the visual direction and the performance goals together.
+                Many learners have theory, but not enough direction, practice, visibility, or peer momentum around emerging technologies. Techvruk
+                gives all four in one connected experience.
               </p>
             </aside>
           </div>
         </section>
 
-        <section className="section testimonial-section">
-          <div className="section-heading compact">
-            <span className="eyebrow">Client Perspective</span>
-            <h2>What real estate teams say after the new creative goes live.</h2>
+        <section className="section" id="community">
+          <div className="community-layout">
+            <div className="section-heading compact">
+              <span className="eyebrow">Community Value</span>
+              <h2>Built for people who want to upskill, network, and work on meaningful projects together.</h2>
+              <p>
+                Techvruk is not only about consuming sessions. It creates a stronger sense of belonging for ambitious learners and professionals who
+                want to keep moving toward future-ready work.
+              </p>
+
+              <div className="community-badges">
+                <span>Networking</span>
+                <span>Recognition</span>
+                <span>Collaboration</span>
+                <span>Future-ready growth</span>
+              </div>
+            </div>
+
+            <div className="community-grid">
+              {communityGroups.map((group) => (
+                <article key={group.label} className="community-card">
+                  <span>{group.label}</span>
+                  <p>{group.title}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="tracks">
+          <div className="section-heading">
+            <span className="eyebrow">Focus Areas</span>
+            <h2>Flexible program themes across the technologies shaping modern engineering careers.</h2>
           </div>
 
-          <div className="testimonial-grid">
-            {testimonials.map((testimonial) => (
-              <article key={testimonial.name} className="testimonial-card">
-                <p>"{testimonial.quote}"</p>
-                <strong>{testimonial.name}</strong>
-                <span>{testimonial.role}</span>
+          <div className="tracks-grid">
+            {focusAreas.map((area) => (
+              <article key={area.title} className="track-card">
+                <h3>{area.title}</h3>
+                <p>{area.description}</p>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="section cta-section" id="contact">
-          <div>
-            <span className="eyebrow">Ready to scale</span>
-            <h2>Need a developer who can design like a real estate service agency, not just ship a generic page?</h2>
-          </div>
+        <section className="section" id="contact">
+          <div className="cta-panel">
+            <div>
+              <span className="eyebrow">Landing Page Direction</span>
+              <h2>Position Techvruk as the place where ambitious engineers learn, compete, connect, and get recognized.</h2>
+            </div>
 
-          <div className="cta-actions">
-            <a className="primary-button" href="mailto:hello@elevateestates.co">
-              hello@elevateestates.co
-            </a>
-            <p>Available for website design, landing pages, video editing, advertising, and social media management.</p>
+            <div className="cta-copy">
+              <p>
+                This concept is intentionally built to feel energetic, credible, and future-facing so a first-time visitor immediately understands the
+                brand promise and the value of joining the platform.
+              </p>
+
+              <div className="hero-actions cta-actions">
+                <a className="primary-button" href="#top">
+                  Revisit the hero
+                </a>
+                <a className="secondary-button" href="#platform">
+                  Explore key sections
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
